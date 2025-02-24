@@ -90,10 +90,6 @@ pip install --trusted-host https://pypi.tuna.tsinghua.edu.cn -i https://pypi.tun
 
 Made by Team ArianBot
 
-Address of our team's GitHub :
-
-https://github.com/Arseinlibrary/Arsein__library.git
-
 
 ### Key Features
 
