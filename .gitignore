@@ -1,0 +1,10 @@
+pycache/
+*.pyc
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+FETCH_HEAD
+*.egg-info/
+dist/
+build/
