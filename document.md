@@ -246,7 +246,7 @@ class Bot:
 23. `def getChatAdministrators(self, chat_id: str):`
 24. `def getChatMemberCount(self, chat_id: str):`
 25. `def promoteChatMember(self, chat_id: str, member_id: str, rights: dict = {}):`
-26. `def pinChatMessage(self, chat_id: str, message_id: str):` (توجه: member_id اشتباه در برخی جاها)
+26. `def pinChatMessage(self, chat_id: str, message_id: str):` 
 27. `def unpinChatMessage(self, chat_id: str, message_id: str):`
 28. `def exportChatInviteLink(self, chat_id: str):`
 29. `def revokeChatInviteLink(self, chat_id: str, invite_link: str):`
