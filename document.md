@@ -1,61 +1,90 @@
-# Documentation for Arsein.py
+# Comprehensive Documentation
 
-## Overview
-The `Arsein.py` module provides a set of classes and methods designed to facilitate the interaction with the Arsein application. This documentation aims to provide a comprehensive guide on the usage of the module, including detailed descriptions of classes, methods, parameters, usage examples, and best practices.
+## Messenger Class
 
-## Classes
+### Overview
+The Messenger class is designed to handle communication with the messaging service.
 
-### 1. `Arsein`
-The `Arsein` class is the main interface for interacting with the Arsein application.
+### Methods
 
-#### **Attributes**:
-- `attribute_name` (type): Description of the attribute.
-
-#### **Methods**:
-- **`__init__(self, parameter1, parameter2)`**: Initializes the Arsein object with the specified parameters.
-  - **Parameters**:
-    - `parameter1` (type): Description of the first parameter.
-    - `parameter2` (type): Description of the second parameter.
-  - **Returns**: None
-
-- **`method_one(self, arg1)`**: Performs the first operation.
-  - **Parameters**:
-    - `arg1` (type): Description of the argument.
-  - **Returns**: Description of return value.
-  - **Example**:
-    ```python
-    arsein_instance.method_one(value)
-    ```
-
-- **`method_two(self, arg1, arg2)`**: Performs the second operation.
-  - **Parameters**:
-    - `arg1` (type): Description of the first argument.
-    - `arg2` (type): Description of the second argument.
-  - **Returns**: Description of return value.
-  - **Example**:
-    ```python
-    result = arsein_instance.method_two(value1, value2)
-    ```
-
-## Usage Examples
-```python
-# Import the Arsein module
-from Arsein import Arsein
-
-# Create an instance of the Arsein class
-arsein = Arsein(param1, param2)
-
-# Using method_one
-arsein.method_one(arg1)
-
-# Using method_two
-result = arsein.method_two(arg1, arg2)
+#### sendMessage(message: string): void
+- **Parameters:**
+  - `message`: The message to be sent.
+- **Example:**
+```javascript
+messenger.sendMessage("Hello, world!");
 ```
 
-## Best Practices
-- Always ensure that the parameters passed to methods are of the expected type.
-- Utilize exception handling to manage any errors that may arise during method execution.
-- Write unit tests to validate the functionality of the `Arsein` class and its methods.
+#### receiveMessage(): string
+- **Returns:** The message received.
+- **Example:**
+```javascript
+let msg = messenger.receiveMessage();
+console.log(msg);
+```
 
-## Conclusion
-This documentation serves as a guide to effectively use the `Arsein.py` module, ensuring thorough understanding and effective implementation of its functionalities.
+## Bot Class
+
+### Overview
+The Bot class provides functionalities to create and manage bots.
+
+### Methods
+
+#### start(): void
+- **Description:** Starts the bot.
+- **Example:**
+```javascript
+bot.start();
+```
+
+#### stop(): void
+- **Description:** Stops the bot.
+- **Example:**
+```javascript
+bot.stop();
+```
+
+## Rubino Class
+
+### Overview
+The Rubino class handles interactions with the Rubino service.
+
+### Methods
+
+#### initialize(apiKey: string): void
+- **Parameters:**
+  - `apiKey`: The API key for authentication.
+- **Example:**
+```javascript
+rubino.initialize("your_api_key");
+```
+
+#### fetchData(query: string): Object
+- **Parameters:**
+  - `query`: The query string to fetch data.
+- **Returns:** Fetched data as an object.
+- **Example:**
+```javascript
+let data = rubino.fetchData("select * from table");
+```
+
+---
+### User Levels Documentation
+
+#### Beginners
+For beginners, understanding the following concepts is crucial:
+- Class and Object basics
+- Method definitions
+- Simple examples showing functionality.
+
+#### Intermediate Users
+Intermediate users should focus on:
+- Effective error handling techniques.
+- Understanding asynchronous operations within methods.
+- More complex examples involving multiple classes.
+
+#### Advanced Users
+Advanced users should explore:
+- Optimizations for performance improvement.
+- Integrating the classes with real-world applications.
+- Advanced error handling and logging strategies.
