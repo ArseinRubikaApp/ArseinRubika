@@ -324,7 +324,7 @@ class Rubino:
 **نحوه استفاده سریع:**
 
 ```python
-from arsein.Arsein import Messenger, Bot, Rubino
+from arsein import Messenger, Bot, Rubino
 
 # Messenger (UserBot)
 bot = Messenger(Sh_account="...", keyAccount="...")
@@ -334,5 +334,4 @@ b = Bot(token="BOT_TOKEN")
 
 # Rubino
 rub = Rubino(auth="...")
-rub.addPostImage("photo.jpg", profile_id="...", caption="سلام!")
 ```
