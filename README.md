@@ -453,7 +453,7 @@ bots.run()
 - ترکیب فیلترها با `&` (و)، `|` (یا)، `\~` (نه) امکان‌پذیر است:
   
 ```python
-  @bot.getUpdate(is_gap & text_startswith("!ban") & \~is_bot)
+  @bot.getUpdate(bot.is_gap & bot.text_startswith("!ban") & \~bot.is_bot)
   def handle_ban(msg):
       ...
 ```
